@@ -20,6 +20,14 @@ int main(){
     }
 
     printf("Heads: %d:, Tails: %d\n",heads,tails);
+
+    if(heads>tails){
+        printf("You won!\n");
+    }else{
+        pirntf("You lost!\n");
+    }
+
+    return 0;
 }
 
 const char* coin_toss(){
