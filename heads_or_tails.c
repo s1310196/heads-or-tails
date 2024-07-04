@@ -5,12 +5,17 @@
 const char* coin_toss();
 
 int main(){
+    int heads=0,tails=0,i;
+    const char* results[3];
+    char name[50];
+
+    printf("Who are you?\n> ");
+    scanf("%49s",name);
+    printf("Hello, %s!\n",name);
+
     srand(time(NULL));
 
     printf("Tossing a coin...\n");
-
-    int heads=0,tails=0,i;
-    const char* results[3];
 
     for(i=0;i<3;i++){
         results[i]=coin_toss();
